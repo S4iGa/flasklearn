@@ -13,6 +13,9 @@ def good():
 def sex():
     message = "Sex"
     return message
+@app.route('/kill', methods=["GET"])
+def killer():
+    return render_template("kill.html")
 
 
 if __name__ == "__main__":
